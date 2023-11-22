@@ -1,0 +1,264 @@
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .tagline {
+            font-size: 24px;
+            font-style: italic;
+            color: #666666;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333333;
+            border-radius: 10px;
+        }
+
+        .nav-link:hover {
+            background-color: #cccccc;
+        }
+
+        .nav-link.active {
+            background-color: #999999;
+            color: #ffffff;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333333;
+            margin: 0 0 10px 0;
+        }
+
+        .section-content {
+            font-size: 18px;
+            color: #666666;
+            line-height: 1.5;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skill {
+            margin: 10px;
+            padding: 10px;
+            background-color: #cccccc;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .project {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-item {
+            margin: 0 10px;
+        }
+
+        .social-link {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333333;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        .social-link:hover {
+            background-color: #999999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <div class="name">Leatile Mosimanyana</div>
+            <ul class="nav">
+                <li class="nav-item"><a href="#about" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="section" id="about">
+            <div class="section-title">About Me</div>
+            <div class="section-content">
+                <p>Hello, I am Leatile Mosimanyana, a junior developer in all languages. I have a passion for creating beautiful and functional web applications using HTML, CSS and JavaScript. I am always eager to learn new technologies and improve my skills.</p>
+                <p>I have a bachelor's degree in computer science from the University of Botswana and I have completed several online courses and projects on web development. I am currently looking for new opportunities to work as a web developer and showcase my talents.</p>
+            </div>
+        </div>
+        <div class="section" id="skills">
+            <div class="section-title">Skills</div>
+            <div class="section-content">
+                <ul class="skills">
+                    <li class="skill">HTML</li>
+                    <li class="skill">CSS</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">Bootstrap</li>
+                    <li class="skill">jQuery</li>
+                    <li class="skill">React</li>
+                    <li class="skill">Node.js</li>
+                    <li class="skill">Express</li>
+                    <li class="skill">MongoDB</li>
+                    <li class="skill">Git</li>
+                    <li class="skill">GitHub</li>
+                    <li class="skill">Heroku</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <div class="section-title">Projects</div>
+            <div class="section-content">
+                <ul class="projects">
+                    <li class="project">
+                        <img src="project1.jpg" alt="Project 1" class="project-image">
+                        <div class="project-title">Todo List App</div>
+                    </li>
+                    <li class="project">
+                        <img src="project2.jpg" alt="Project 2" class="project-image">
+                        <div class="project-title">Weather App</div>
+                    </li>
+                    <li class="project">
+                        <img src="project3.jpg" alt="Project 3" class="project-image">
+                        <div class="project-title">Calculator App</div>
+                    </li>
+                    <li class="project">
+                        <img src="project4.jpg" alt="Project 4" class="project-image">
+                        <div class="project-title">Quiz App</div>
+                    </li>
+                    <li class="project">
+                        <img src="project5.jpg" alt="Project 5" class="project-image">
+                        <div class="project-title">Blog App</div>
+                    </li>
+                    <li class="project">
+                        <img src="project6.jpg" alt="Project 6" class="project-image">
+                        <div class="project-title">E-commerce App</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="section-title">Contact Me</div>
+            <div class="section-content">
+                <p>If you are interested in working with me or hiring me, please feel free to contact me through any of the following channels:</p>
+                <ul class="footer">
+                    <li class="social-item"><a href="mailto:leatilemosimanyana@gmail.com" class="social-link"><i class="fa fa-envelope"></i></a></li>
+                    <li class="social-item"><a href="tel:+26712345678" class="social-link"><i class="fa fa-phone"></i></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/leatile-mosimanyana" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="social-item"><a href="https://github.com/leatilemosimanyana" class="social-link"><i class="fa fa-github"></i></a></li>
+                    <li class="social-item"><a href="https://twitter.com/leatilemosimanyana" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // You can add some JavaScript code here to make your portfolio page more interactive

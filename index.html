@@ -216,6 +216,34 @@
                 color: #999999;
             }
         }
+        /* Add this CSS to your existing styles */
+@media screen and (max-width: 768px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        margin-bottom: 20px; /* Add spacing between projects */
+    }
+
+    .project-image {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+/* Add this CSS to your existing styles */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .section-content {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+        line-height: 1.6; /* Increase line height for better readability */
+    }
+}
+
     </style>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
